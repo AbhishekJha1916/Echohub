@@ -5,6 +5,7 @@ import Story2 from '../../assets/Bob.jpg';
 import Story3 from '../../assets/Charlie.jpg';
 import { FaPlus, FaSmile, FaImage, FaVideo, FaCalendar, FaEllipsisH } from 'react-icons/fa';
 import profile from '../../assets/profile-p.jpg';
+import verify from '../../assets/tick.svg';
 
 const Feed = () => {
 
@@ -23,36 +24,35 @@ const Feed = () => {
       name: "John Doe",
       about: "Loves traveling and reading",
       photo: Story1,
+      verified: true,
     },
     {
       id: 2,
       name: "Jane Smith",
       about: "Tech enthusiast and engineer",
       photo: Story2,
+      verified: false,
     },
     {
       id: 3,
       name: "Alice Johnson",
       about: "Fitness coach and yoga instructor",
       photo: Story3,
+      verified: true,
     },
     {
       id: 4,
       name: "Bob Brown",
       about: "Gamer and Software developer",
       photo: Story1,
+      verified: true,
     },
     {
       id: 5,
       name: "John Doe",
       about: "Loves traveling",
       photo: Story2,
-    },
-    {
-      id: 6,
-      name: "Jane Smith",
-      about: "Tech enthusiast and blogger",
-      photo: Story3,
+      verified: false,
     },
   ];
 
@@ -138,12 +138,15 @@ const Feed = () => {
               <img src={suggestion.photo} alt={suggestion.name} className="who-to-follow-image" />
             </div>
             <div className="who-to-follow-info">
-              <div className="who-to-follow-name">{suggestion.name}</div>
+              <div className="who-to-follow-name">
+                {suggestion.name}
+                {suggestion.verified ? <img src={verify} alt="verify" /> : ''}
+              </div>
               <div className="who-to-follow-about">{suggestion.about}</div>
             </div>
-              <button className="follow-button">
-                <FaPlus />
-              </button>
+            <button className="follow-button">
+              <FaPlus />
+            </button>
           </div>
         ))}
         <button className="view-more-button">View More</button>

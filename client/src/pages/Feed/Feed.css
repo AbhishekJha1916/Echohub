@@ -265,11 +265,14 @@
 }
 
 .who-to-follow-name {
+  display: flex;
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 5px;
   font-family: Ubuntu;
   color: #333;
+  align-items: center;
+  gap: 5px;
 }
 
 .who-to-follow-about {

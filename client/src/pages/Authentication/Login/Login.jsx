@@ -8,7 +8,7 @@ const LoginPage = () => {
                 </button>
                 <div className="w-full p-10 flex flex-col justify-center items-center m-auto">
                     <h1 className="text-7xl font-semibold mb-[30px] text-center mt-[-100px] text-[#333] font-[Ubuntu]">Login</h1>
-                    <p className="mb-[70px] text-center text-[#333] font-[Ubuntu]">Welcome back! Please login to your account.</p>
+                    <p className="mb-[70px] text-center text-[#333] font-[Ubuntu]">Please login to your account.</p>
                     <form>
                         <div className="mb-4">
                             {/* <label className="block mb-2 font-[Ubuntu]">Username</label> */}
@@ -50,19 +50,18 @@ const LoginPage = () => {
 
             {/* Right Half */}
             <div className="relative w-1/2 text-white p-10 flex flex-col justify-center items-center background-image">
-                <div className="absolute inset-0 bg-black opacity-50"></div>
-                <div className="relative z-10">
-                    <h2 className="text-7xl font-semibold mb-[250px] mt-[-245px] font-[Ubuntu]">Welcome Back</h2>
-                    <div className="text-center flex flex-col justify-center items-center">
-                        <p className="mb-4 font-[Ubuntu] text-2xl"> Want to create a new account ? </p>
-                        <div className="button-container">
-                            <button className="btn">
-                                <span className="material-icons">arrow_forward</span>
-                            </button>
-                            <p className="signup-text">Sign Up</p>
-                        </div>
+
+                <h2 className="text-7xl font-semibold mb-[250px] mt-[-245px] font-[Ubuntu]">Welcome Back</h2>
+                <div className="text-center flex flex-col justify-center items-center">
+                    <p className="mb-4 font-[Ubuntu] text-2xl"> Want to create a new account ? </p>
+                    <div className="button-container">
+                        <button className="btn">
+                            <span className="material-icons">arrow_forward</span>
+                        </button>
+                        <p className="signup-text">Sign Up</p>
                     </div>
                 </div>
+
             </div>
         </div>
     );
